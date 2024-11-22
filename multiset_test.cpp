@@ -3,7 +3,7 @@
 
 void testMultiset() {
     std::cout << "Test 1: Creating and adding elements from std::string\n";
-    Multiset set1 = Multiset::fromString("{a, b, c}");
+    Multiset set1 = Multiset::fromString("{a, b, d}");
     set1.print();
     std::cout << "\n";
 

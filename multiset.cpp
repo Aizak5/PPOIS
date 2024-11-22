@@ -92,6 +92,10 @@ Multiset Multiset::fromString(const std::string& str) {
     return result;
 }
 
+Multiset Multiset::fromString(const char* str) {
+    return fromString(std::string(str));  // Перегрузка для char* делает вызов для std::string
+}
+
 std::string Multiset::toString() const {
     std::stringstream ss;
     ss << "{ ";
@@ -105,8 +109,7 @@ std::string Multiset::toString() const {
 void Multiset::print() const {
     if (isEmpty()) {
         std::cout << "Empty ";
-    }
-    else {
+    } else {
         std::cout << "{ ";
         for (const auto& elem : elements) {
             std::cout << elem << " ";

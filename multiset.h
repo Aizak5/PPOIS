@@ -1,4 +1,3 @@
-#pragma once
 #ifndef MULTISET_H
 #define MULTISET_H
 
@@ -23,7 +22,7 @@ public:
     void remove(const char elem);
     size_t size() const;
     bool contains(const char elem) const;
-
+    
     // Операторы
     Multiset operator+(const Multiset& other) const;
     void operator+=(const Multiset& other);
@@ -34,6 +33,7 @@ public:
 
     // Методы для строк
     static Multiset fromString(const std::string& str);
+    static Multiset fromString(const char* str); // Перегрузка для char*
     std::string toString() const;
 
     // Метод вывода множества

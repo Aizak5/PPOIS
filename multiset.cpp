@@ -86,14 +86,14 @@ Multiset Multiset::fromString(const std::string& str) {
     char ch;
     while (ss >> ch) {
         if (ch != ',' && ch != ' ' && ch != '{' && ch != '}') {
-            result.add(ch);  // Добавляем одиночный элемент
+            result.add(ch);  
         }
     }
     return result;
 }
 
 Multiset Multiset::fromString(const char* str) {
-    return fromString(std::string(str));  // Перегрузка для char* делает вызов для std::string
+    return fromString(std::string(str));  
 }
 
 std::string Multiset::toString() const {

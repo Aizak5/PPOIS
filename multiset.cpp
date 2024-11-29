@@ -1,119 +1,58 @@
+#include <iostream>
 #include "Multiset.h"
 
-Multiset::Multiset() = default;
+void testMultiset() {
+    setlocale(LC_ALL, "rus");
 
-Multiset::Multiset(const char& elem) {
-    elements.insert(elem);
+    
+    std::cout << "Test 1: Создать и добавить элементы из std::string\n";
+    Multiset set1 = Multiset::fromString("{a, b, d}");
+    set1.print();  
+    std::cout << "\n";
+
+    std::cout << "Test 2: Создать и добавить элементы из char*\n";
+    const char* str = "{d, e, f}";
+    Multiset set2 = Multiset::fromString(str);
+    set2.print();  
+    std::cout << "\n";
+
+    std::cout << "Test 3: Объединение двух множеств\n";
+    Multiset unionSet = set1 + set2;
+    std::cout << "Объединение set1 и set2: ";
+    unionSet.print(); 
+    std::cout << "\n";
+
+    std::cout << "Test 4: Пересечение двух множеств\n";
+    Multiset intersectionSet = set1 * set2;
+    std::cout << "Пересечение set1 и set2: ";
+    intersectionSet.print();  
+    std::cout << "\n";
+
+    std::cout << "Test 5: Разность двух множеств\n";
+    Multiset differenceSet = set1 - set2;
+    std::cout << "Разность set1 и set2: ";
+    differenceSet.print();  
+    std::cout << "\n";
+
+    std::cout << "Test 6: Пустое множество\n";
+    Multiset emptySet = Multiset::fromString("{}");
+    emptySet.print();  
+    std::cout << "\n";
+
+    std::cout << "Test 7: Множество с повторяющимися элементами\n";
+    Multiset setWithDuplicates = Multiset::fromString("{a, a, b, b, b, c}");
+    setWithDuplicates.print();  
+    std::cout << "\n";
+
+    std::cout << "Test 8: Некорректная строка для fromString\n";
+    const char* invalidStr = "{a, b, c,}";
+    Multiset invalidSet = Multiset::fromString(invalidStr);
+    invalidSet.print();  
+
 }
 
-bool Multiset::isEmpty() const {
-    return elements.empty();
-}
-
-void Multiset::add(const char elem) {
-    elements.insert(elem);
-}
-
-void Multiset::remove(const char elem) {
-    elements.erase(elem);
-}
-
-size_t Multiset::size() const {
-    return elements.size();
-}
-
-bool Multiset::contains(const char elem) const {
-    return elements.find(elem) != elements.end();
-}
-
-Multiset Multiset::operator+(const Multiset& other) const {
-    Multiset result = *this;
-    for (const auto& elem : other.elements) {
-        result.add(elem);
-    }
-    return result;
-}
-
-void Multiset::operator+=(const Multiset& other) {
-    for (const auto& elem : other.elements) {
-        this->add(elem);
-    }
-}
-
-Multiset Multiset::operator*(const Multiset& other) const {
-    Multiset result;
-    for (const auto& elem : elements) {
-        if (other.contains(elem)) {
-            result.add(elem);
-        }
-    }
-    return result;
-}
-
-void Multiset::operator*=(const Multiset& other) {
-    Multiset result;
-    for (const auto& elem : elements) {
-        if (other.contains(elem)) {
-            result.add(elem);
-        }
-    }
-    elements = result.elements;
-}
-
-Multiset Multiset::operator-(const Multiset& other) const {
-    Multiset result;
-    for (const auto& elem : elements) {
-        if (!other.contains(elem)) {
-            result.add(elem);
-        }
-    }
-    return result;
-}
-
-void Multiset::operator-=(const Multiset& other) {
-    Multiset result;
-    for (const auto& elem : elements) {
-        if (!other.contains(elem)) {
-            result.add(elem);
-        }
-    }
-    elements = result.elements;
-}
-
-Multiset Multiset::fromString(const std::string& str) {
-    Multiset result;
-    std::stringstream ss(str);
-    char ch;
-    while (ss >> ch) {
-        if (ch != ',' && ch != ' ' && ch != '{' && ch != '}') {
-            result.add(ch);  
-        }
-    }
-    return result;
-}
-
-Multiset Multiset::fromString(const char* str) {
-    return fromString(std::string(str));  
-}
-
-std::string Multiset::toString() const {
-    std::stringstream ss;
-    ss << "{ ";
-    for (const auto& elem : elements) {
-        ss << elem << " ";
-    }
-    ss << "}";
-    return ss.str();
-}
-
-void Multiset::print() const {
-    if (isEmpty()) {
-        std::cout << "Empty ";
-    } else {
-        std::cout << "{ ";
-        for (const auto& elem : elements) {
-            std::cout << elem << " ";
-        }
-        std::cout << "} ";
-    }
+int main() {
+    // Запуск всех тестов
+    testMultiset();
+    return 0;
 }

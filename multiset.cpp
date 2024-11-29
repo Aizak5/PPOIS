@@ -1,9 +1,13 @@
-#include "Multiset.h"
+#include "multiset.h"
+#include <iostream>
+#include <sstream>
+#include <map>
+#include <string>
 
 Multiset::Multiset() = default;
 
 Multiset::Multiset(const char& elem) {
-    elements.insert(elem);
+    elements[elem] = 1;  
 }
 
 bool Multiset::isEmpty() const {
@@ -11,15 +15,26 @@ bool Multiset::isEmpty() const {
 }
 
 void Multiset::add(const char elem) {
-    elements.insert(elem);
+    elements[elem]++;  
 }
 
 void Multiset::remove(const char elem) {
-    elements.erase(elem);
+    auto it = elements.find(elem);
+    if (it != elements.end()) {
+        if (it->second > 1) {
+            it->second--;  
+        } else {
+            elements.erase(it);  
+        }
+    }
 }
 
 size_t Multiset::size() const {
-    return elements.size();
+    size_t totalSize = 0;
+    for (const auto& pair : elements) {
+        totalSize += pair.second;  
+    }
+    return totalSize;
 }
 
 bool Multiset::contains(const char elem) const {
@@ -29,22 +44,23 @@ bool Multiset::contains(const char elem) const {
 Multiset Multiset::operator+(const Multiset& other) const {
     Multiset result = *this;
     for (const auto& elem : other.elements) {
-        result.add(elem);
+        result.elements[elem.first] += elem.second; 
     }
     return result;
 }
 
 void Multiset::operator+=(const Multiset& other) {
     for (const auto& elem : other.elements) {
-        this->add(elem);
+        elements[elem.first] += elem.second;  
     }
 }
 
 Multiset Multiset::operator*(const Multiset& other) const {
     Multiset result;
     for (const auto& elem : elements) {
-        if (other.contains(elem)) {
-            result.add(elem);
+        auto it = other.elements.find(elem.first);
+        if (it != other.elements.end()) {
+            result.elements[elem.first] = std::min(elem.second, it->second);  
         }
     }
     return result;
@@ -53,8 +69,9 @@ Multiset Multiset::operator*(const Multiset& other) const {
 void Multiset::operator*=(const Multiset& other) {
     Multiset result;
     for (const auto& elem : elements) {
-        if (other.contains(elem)) {
-            result.add(elem);
+        auto it = other.elements.find(elem.first);
+        if (it != other.elements.end()) {
+            result.elements[elem.first] = std::min(elem.second, it->second);  
         }
     }
     elements = result.elements;
@@ -63,8 +80,9 @@ void Multiset::operator*=(const Multiset& other) {
 Multiset Multiset::operator-(const Multiset& other) const {
     Multiset result;
     for (const auto& elem : elements) {
-        if (!other.contains(elem)) {
-            result.add(elem);
+        auto it = other.elements.find(elem.first);
+        if (it == other.elements.end() || it->second < elem.second) {
+            result.elements[elem.first] = elem.second - (it != other.elements.end() ? it->second : 0);
         }
     }
     return result;
@@ -73,8 +91,9 @@ Multiset Multiset::operator-(const Multiset& other) const {
 void Multiset::operator-=(const Multiset& other) {
     Multiset result;
     for (const auto& elem : elements) {
-        if (!other.contains(elem)) {
-            result.add(elem);
+        auto it = other.elements.find(elem.first);
+        if (it == other.elements.end() || it->second < elem.second) {
+            result.elements[elem.first] = elem.second - (it != other.elements.end() ? it->second : 0);
         }
     }
     elements = result.elements;
@@ -93,14 +112,16 @@ Multiset Multiset::fromString(const std::string& str) {
 }
 
 Multiset Multiset::fromString(const char* str) {
-    return fromString(std::string(str));  
+    return fromString(std::string(str));
 }
 
 std::string Multiset::toString() const {
     std::stringstream ss;
     ss << "{ ";
     for (const auto& elem : elements) {
-        ss << elem << " ";
+        for (size_t i = 0; i < elem.second; ++i) {
+            ss << elem.first << " ";  
+        }
     }
     ss << "}";
     return ss.str();
@@ -113,7 +134,9 @@ void Multiset::print() const {
     else {
         std::cout << "{ ";
         for (const auto& elem : elements) {
-            std::cout << elem << " ";
+            for (size_t i = 0; i < elem.second; ++i) {
+                std::cout << elem.first << " ";  
+            }
         }
         std::cout << "} ";
     }

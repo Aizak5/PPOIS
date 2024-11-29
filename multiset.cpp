@@ -52,7 +52,6 @@ void testMultiset() {
 }
 
 int main() {
-    // Запуск всех тестов
     testMultiset();
     return 0;
 }

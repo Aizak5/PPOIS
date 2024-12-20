@@ -19,5 +19,5 @@ bool Attendance::hasStudentAttendedOnDate(Student* student, const std::string& d
             return dateIt->second;
         }
     }
-    return false;  // Если посещаемость не была зарегистрирована для этого студента в этот день
+    return false;  
 }

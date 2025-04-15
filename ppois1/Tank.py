@@ -44,7 +44,6 @@ class Tank:
             print("Танк не может участвовать в операции, он поврежден.")
             return
 
-        # Проверяем наличие топлива и боеприпасов перед операцией
         if self.fuel <= 0:
             print("Танк не может участвовать в операции, недостаточно топлива!")
             return
@@ -53,15 +52,13 @@ class Tank:
             return
 
         print(f"Танк участвует в операции: {operation_name}...")
-        # После операции танк может требовать ремонта
-        self.operational = random.choice([True, False])  # Случайное повреждение
+        self.operational = random.choice([True, False])  
 
-        # Потери топлива и боеприпасов в пределах от 0 до текущих значений
         fuel_lost = min(random.randint(1, int(self.fuel+1)),self.fuel)
         ammo_lost = random.randint(0, self.ammo)
 
-        self.fuel = max(0, self.fuel - fuel_lost)  # Уменьшаем количество топлива
-        self.ammo = max(0, self.ammo - ammo_lost)  # Уменьшаем количество боеприпасов
+        self.fuel = max(0, self.fuel - fuel_lost)  
+        self.ammo = max(0, self.ammo - ammo_lost) 
 
         print(f"После операции: Потеряно топлива: {fuel_lost:.2f} литров, Потеряно боеприпасов: {ammo_lost}.")
         print(f"Оставшееся топливо: {self.fuel:.2f} литров, боеприпасов: {self.ammo}.")

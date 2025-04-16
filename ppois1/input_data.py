@@ -28,21 +28,16 @@ def input_ammo() -> int:
 
 def input_crew() -> Dict[str, str]:
     crew: Dict[str, str] = {}
-    print("Введите члена экипажа(капитан,наводчик,водитель) в формате 'Должность:Имя'. Пример: 'водитель: Иван'.")
     roles = ["капитан", "наводчик", "водитель"]
-
     for role in roles:
         while True:
-            entry = input(f"Введите члена экипажа (Должность:Имя): ").strip()
-            if ":" in entry:
-                position, name = entry.split(":", 1)
-                position = position.strip().lower()
-                name = name.strip()
-                if position in roles:
-                    crew[position] = name
-                    break
-                else:
-                    print("Некорректная должность. Должности могут быть: капитан, наводчик, водитель.")
-            else:
-                print("Неверный формат. Используйте формат 'Должность:Имя'.")
+            try:
+                print(f"Введите имя {role}:",end="")
+                entry = input().strip()
+                if entry=="":
+                    raise ValueError("имя не может быть пустым.")
+                crew[role]=entry
+                break
+            except ValueError as e:
+                print(f"Ошибка: {e} Пожалуйста, введите не пустое имя.")
     return crew

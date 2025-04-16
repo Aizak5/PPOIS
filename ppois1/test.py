@@ -5,7 +5,7 @@ from Tank import Tank
 class TestTank(unittest.TestCase):
 
     def setUp(self):
-        self.crew = {'водитель': 'Иванов', 'наводчик': 'Петров'}
+        self.crew = {'водитель': 'Иванов', 'наводчик': 'Петров', 'капитан':'Олег'}
         self.tank = Tank(model="T-90", fuel=100, ammo=50, crew=self.crew)
 
     def test_initialization(self):

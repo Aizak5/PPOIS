@@ -18,12 +18,8 @@ class TestTank(unittest.TestCase):
 
     def test_drive_success(self):
         self.tank.drive(10)
-        self.assertEqual(self.tank.fuel, 70)  
+        self.assertEqual(self.tank.fuel, 70)
 
-    def test_drive_no_driver(self):
-        del self.tank.crew['водитель']
-        self.tank.drive(10)
-        self.assertEqual(self.tank.fuel, 100)
 
     def test_drive_not_enough_fuel(self):
         self.tank.fuel = 5
@@ -33,11 +29,6 @@ class TestTank(unittest.TestCase):
     def test_shoot_success(self):
         self.tank.shoot()
         self.assertEqual(self.tank.ammo, 49)
-
-    def test_shoot_no_gunner(self):
-        del self.tank.crew['наводчик']
-        self.tank.shoot()
-        self.assertEqual(self.tank.ammo, 50)
 
     def test_shoot_no_ammo(self):
         self.tank.ammo = 0

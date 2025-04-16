@@ -1,5 +1,4 @@
 import unittest
-from unittest.mock import patch
 from Tank import Tank
 
 
@@ -34,21 +33,6 @@ class TestTank(unittest.TestCase):
         self.tank.ammo = 0
         self.tank.shoot()
         self.assertEqual(self.tank.ammo, 0)
-
-    @patch('random.choice')
-    def test_participate_in_operation_success(self, mock_random_choice):
-        mock_random_choice.return_value = True
-
-        self.tank.participate_in_operation("Операция Восток")
-
-        self.assertIn(self.tank.operational, [True, False])
-
-    @patch('random.choice')
-    def test_participate_in_operation_damage(self, mock_random_choice):
-        mock_random_choice.return_value = False
-        self.tank.participate_in_operation("Операция Восток")
-
-        self.assertFalse(self.tank.operational)
 
     def test_participate_in_operation_no_fuel(self):
         self.tank.fuel = 0

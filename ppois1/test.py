@@ -18,7 +18,7 @@ class TestTank(unittest.TestCase):
 
     def test_drive_success(self):
         self.tank.drive(10)
-        self.assertEqual(self.tank.fuel, 70)  # 100 - 10*3 = 70
+        self.assertEqual(self.tank.fuel, 70)  
 
     def test_drive_no_driver(self):
         del self.tank.crew['водитель']

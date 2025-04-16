@@ -15,9 +15,6 @@ class Tank:
         if not self.operational:
             print("Танк не готов к движению.")
             return
-        if "водитель" not in self.crew:
-            print("Без водителя танк не может двигаться!")
-            return
         fuel_needed = km*3
         if self.fuel < fuel_needed:
             print("Недостаточно топлива для движения!")
@@ -29,9 +26,6 @@ class Tank:
         if not self.operational:
             print("Танк не готов к стрельбе.")
             return
-        if "наводчик" not in self.crew:
-            print("Без наводчика танк не может стрелять!")
-            return
         if self.ammo <= 0:
             print("Нет боеприпасов для стрельбы!")
             return
@@ -39,7 +33,6 @@ class Tank:
         print(f"Танк выстрелил. Осталось боеприпасов: {self.ammo}.")
 
     def participate_in_operation(self, operation_name: str) -> None:
-        """Участие в военной операции с возможностью повреждения танка и уменьшением запасов."""
         if not self.operational:
             print("Танк не может участвовать в операции, он поврежден.")
             return
@@ -52,13 +45,13 @@ class Tank:
             return
 
         print(f"Танк участвует в операции: {operation_name}...")
-        self.operational = random.choice([True, False])  
+        self.operational = random.choice([True, False])
 
         fuel_lost = min(random.randint(1, int(self.fuel+1)),self.fuel)
         ammo_lost = random.randint(0, self.ammo)
 
-        self.fuel = max(0, self.fuel - fuel_lost)  
-        self.ammo = max(0, self.ammo - ammo_lost) 
+        self.fuel = max(0, self.fuel - fuel_lost)
+        self.ammo = max(0, self.ammo - ammo_lost)
 
         print(f"После операции: Потеряно топлива: {fuel_lost:.2f} литров, Потеряно боеприпасов: {ammo_lost}.")
         print(f"Оставшееся топливо: {self.fuel:.2f} литров, боеприпасов: {self.ammo}.")

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<records>
+  <record>
+    <fullName>Иванов Иван Иванович</fullName>
+    <address>г. Москва, ул. Ленина, д. 10</address>
+    <birthDate>1990-05-15</birthDate>
+    <admissionDate>2025-01-20</admissionDate>
+    <doctorFullName>Петров Петр Петрович</doctorFullName>
+    <diagnosis>Грипп</diagnosis>
+  </record>
+  <record>
+    <fullName>Сидоров Сергей Сергеевич</fullName>
+    <address>г. Санкт-Петербург, ул. Мира, д. 5</address>
+    <birthDate>1985-03-10</birthDate>
+    <admissionDate>2025-02-01</admissionDate>
+    <doctorFullName>Смирнова Анна Ивановна</doctorFullName>
+    <diagnosis>ОРВИ</diagnosis>
+  </record>
+  <record>
+    <fullName>Кузнецова Ольга Викторовна</fullName>
+    <address>г. Новосибирск, ул. Советская, д. 12</address>
+    <birthDate>1992-07-22</birthDate>
+    <admissionDate>2025-03-15</admissionDate>
+    <doctorFullName>Иванов Алексей Сергеевич</doctorFullName>
+    <diagnosis>Бронхит</diagnosis>
+  </record>
+  <record>
+    <fullName>Попов Дмитрий Александрович</fullName>
+    <address>г. Екатеринбург, ул. Победы, д. 8</address>
+    <birthDate>1988-11-30</birthDate>
+    <admissionDate>2025-04-10</admissionDate>
+    <doctorFullName>Козлова Мария Павловна</doctorFullName>
+    <diagnosis>Гастрит</diagnosis>
+  </record>
+  <record>
+    <fullName>Морозова Екатерина Николаевна</fullName>
+    <address>г. Казань, ул. Центральная, д. 15</address>
+    <birthDate>1995-02-14</birthDate>
+    <admissionDate>2025-01-25</admissionDate>
+    <doctorFullName>Соколов Виктор Михайлович</doctorFullName>
+    <diagnosis>Тонзил沾</diagnosis>
+  </record>
+  <record>
+    <fullName>Смирнов Александр Викторович</fullName>
+    <address>г. Ростов-на-Дону, ул. Южная, д. 20</address>
+    <birthDate>1983-09-05</birthDate>
+    <admissionDate>2025-05-01</admissionDate>
+    <doctorFullName>Лебедева Ирина Олеговна</doctorFullName>
+    <diagnosis>Мигрень</diagnosis>
+  </record>
+  <record>
+    <fullName>Васильев Андрей Михайлович</fullName>
+    <address>г. Самара, ул. Молодежная, д. 7</address>
+    <birthDate>1991-04-12</birthDate>
+    <admissionDate>2025-02-10</admissionDate>
+    <doctorFullName>Коваленко Елена Викторовна</doctorFullName>
+    <diagnosis>Пневмония</diagnosis>
+  </record>
+  <record>
+    <fullName>Федорова Анна Сергеевна</fullName>
+    <address>г. Нижний Новгород, ул. Горького, д. 3</address>
+    <birthDate>1987-08-25</birthDate>
+    <admissionDate>2025-03-01</admissionDate>
+    <doctorFullName>Никитин Сергей Павлович</doctorFullName>
+    <diagnosis>Гипертония</diagnosis>
+  </record>
+  <record>
+    <fullName>Лебедев Михаил Юрьевич</fullName>
+    <address>г. Челябинск, ул. Свободы, д. 22</address>
+    <birthDate>1993-12-01</birthDate>
+    <admissionDate>2025-04-05</admissionDate>
+    <doctorFullName>Григорьева Ольга Андреевна</doctorFullName>
+    <diagnosis>Ангина</diagnosis>
+  </record>
+  <record>
+    <fullName>Коваленко Наталья Игоревна</fullName>
+    <address>г. Омск, ул. Лермонтова, д. 9</address>
+    <birthDate>1989-06-18</birthDate>
+    <admissionDate>2025-01-15</admissionDate>
+    <doctorFullName>Зайцев Иван Николаевич</doctorFullName>
+    <diagnosis>Холецистит</diagnosis>
+  </record>
+  <record>
+    <fullName>Зайцев Павел Дмитриевич</fullName>
+    <address>г. Уфа, ул. Октябрьская, д. 14</address>
+    <birthDate>1984-10-10</birthDate>
+    <admissionDate>2025-02-20</admissionDate>
+    <doctorFullName>Михайлова Светлана Петровна</doctorFullName>
+    <diagnosis>Артрит</diagnosis>
+  </record>
+  <record>
+    <fullName>Григорьева Елена Алексеевна</fullName>
+    <address>г. Волгоград, ул. Комсомольская, д. 6</address>
+    <birthDate>1990-03-03</birthDate>
+    <admissionDate>2025-03-10</admissionDate>
+    <doctorFullName>Степанов Олег Викторович</doctorFullName>
+    <diagnosis>Гастрит</diagnosis>
+  </record>
+  <record>
+    <fullName>Соколов Игорь Владимирович</fullName>
+    <address>г. Красноярск, ул. Мира, д. 11</address>
+    <birthDate>1986-07-07</birthDate>
+    <admissionDate>2025-04-15</admissionDate>
+    <doctorFullName>Попова Марина Сергеевна</doctorFullName>
+    <diagnosis>Бронхит</diagnosis>
+  </record>
+  <record>
+    <fullName>Михайлова Светлана Олеговна</fullName>
+    <address>г. Пермь, ул. Ленина, д. 18</address>
+    <birthDate>1994-01-20</birthDate>
+    <admissionDate>2025-02-05</admissionDate>
+    <doctorFullName>Кузнецов Артем Михайлович</doctorFullName>
+    <diagnosis>Мигрень</diagnosis>
+  </record>
+  <record>
+    <fullName>Никитин Сергей Александрович</fullName>
+    <address>г. Воронеж, ул. Победы, д. 4</address>
+    <birthDate>1982-11-15</birthDate>
+    <admissionDate>2025-01-30</admissionDate>
+    <doctorFullName>Федорова Елена Ивановна</doctorFullName>
+    <diagnosis>ОРВИ</diagnosis>
+  </record>
+  <record>
+    <fullName>Павлова Юлия Викторовна</fullName>
+    <address>г. Тюмень, ул. Советская, д. 13</address>
+    <birthDate>1991-09-09</birthDate>
+    <admissionDate>2025-03-20</admissionDate>
+    <doctorFullName>Васильев Дмитрий Сергеевич</doctorFullName>
+    <diagnosis>Тонзиллит</diagnosis>
+  </record>
+  <record>
+    <fullName>Степанов Олег Игоревич</fullName>
+    <address>г. Ижевск, ул. Центральная, д. 10</address>
+    <birthDate>1988-05-25</birthDate>
+    <admissionDate>2025-04-01</admissionDate>
+    <doctorFullName>Морозова Анна Павловна</doctorFullName>
+    <diagnosis>Пневмония</diagnosis>
+  </record>
+  <record>
+    <fullName>Козлова Марина Андреевна</fullName>
+    <address>г. Барнаул, ул. Южная, д. 5</address>
+    <birthDate>1993-02-28</birthDate>
+    <admissionDate>2025-02-15</admissionDate>
+    <doctorFullName>Иванов Виктор Алексеевич</doctorFullName>
+    <diagnosis>Гипертония</diagnosis>
+  </record>
+  <record>
+    <fullName>Фролов Денис Сергеевич</fullName>
+    <address>г. Оренбург, ул. Лермонтова, д. 7</address>
+    <birthDate>1987-12-12</birthDate>
+    <admissionDate>2025-03-05</admissionDate>
+    <doctorFullName>Сидорова Ольга Николаевна</doctorFullName>
+    <diagnosis>Ангина</diagnosis>
+  </record>
+  <record>
+    <fullName>Матвеева Анастасия Петровна</fullName>
+    <address>г. Томск, ул. Комсомольская, д. 9</address>
+    <birthDate>1990-06-06</birthDate>
+    <admissionDate>2025-04-20</admissionDate>
+    <doctorFullName>Петров Андрей Михайлович</doctorFullName>
+    <diagnosis>Гастрит</diagnosis>
+  </record>
+  <record>
+    <fullName>Белов Артем Викторович</fullName>
+    <address>г. Ульяновск, ул. Победы, д. 12</address>
+    <birthDate>1985-04-04</birthDate>
+    <admissionDate>2025-01-10</admissionDate>
+    <doctorFullName>Коваленко Светлана Ивановна</doctorFullName>
+    <diagnosis>Бронхит</diagnosis>
+  </record>
+  <record>
+    <fullName>Савельева Екатерина Олеговна</fullName>
+    <address>г. Ярославль, ул. Советская, д. 15</address>
+    <birthDate>1992-08-08</birthDate>
+    <admissionDate>2025-02-25</admissionDate>
+    <doctorFullName>Соколов Игорь Петрович</doctorFullName>
+    <diagnosis>Мигрень</diagnosis>
+  </record>
+  <record>
+    <fullName>Громов Виктор Сергеевич</fullName>
+    <address>г. Рязань, ул. Мира, д. 8</address>
+    <birthDate>1989-03-15</birthDate>
+    <admissionDate>2025-03-12</admissionDate>
+    <doctorFullName>Лебедева Мария Викторовна</doctorFullName>
+    <diagnosis>ОРВИ</diagnosis>
+  </record>
+  <record>
+    <fullName>Егорова Анна Дмитриевна</fullName>
+    <address>г. Калининград, ул. Ленина, д. 20</address>
+    <birthDate>1994-07-07</birthDate>
+    <admissionDate>2025-04-08</admissionDate>
+    <doctorFullName>Никитин Олег Сергеевич</doctorFullName>
+    <diagnosis>Тонзиллит</diagnosis>
+  </record>
+  <record>
+    <fullName>Титов Павел Александрович</fullName>
+    <address>г. Саратов, ул. Центральная, д. 11</address>
+    <birthDate>1986-01-01</birthDate>
+    <admissionDate>2025-01-28</admissionDate>
+    <doctorFullName>Федорова Елена Павловна</doctorFullName>
+    <diagnosis>Пневмония</diagnosis>
+  </record>
+  <record>
+    <fullName>Лазарева Ольга Игоревна</fullName>
+    <address>г. Краснодар, ул. Южная, д. 6</address>
+    <birthDate>1991-05-20</birthDate>
+    <admissionDate>2025-02-18</admissionDate>
+    <doctorFullName>Степанов Виктор Михайлович</doctorFullName>
+    <diagnosis>Гипертония</diagnosis>
+  </record>
+  <record>
+    <fullName>Крылов Игорь Николаевич</fullName>
+    <address>г. Ставрополь, ул. Победы, д. 9</address>
+    <birthDate>1988-09-09</birthDate>
+    <admissionDate>2025-03-25</admissionDate>
+    <doctorFullName>Козлова Анна Сергеевна</doctorFullName>
+    <diagnosis>Ангина</diagnosis>
+  </record>
+  <record>
+    <fullName>Шарова Мария Викторовна</fullName>
+    <address>г. Владивосток, ул. Советская, д. 14</address>
+    <birthDate>1993-11-11</birthDate>
+    <admissionDate>2025-04-12</admissionDate>
+    <doctorFullName>Иванов Сергей Павлович</doctorFullName>
+    <diagnosis>Гастрит</diagnosis>
+  </record>
+  <record>
+    <fullName>Воробьев Антон Олегович</fullName>
+    <address>г. Архангельск, ул. Лермонтова, д. 5</address>
+    <birthDate>1987-02-02</birthDate>
+    <admissionDate>2025-01-22</admissionDate>
+    <doctorFullName>Михайлова Ольга Андреевна</doctorFullName>
+    <diagnosis>Бронхит</diagnosis>
+  </record>
+  <record>
+    <fullName>Романова Елена Сергеевна</fullName>
+    <address>г. Мурманск, ул. Комсомольская, д. 10</address>
+    <birthDate>1990-10-10</birthDate>
+    <admissionDate>2025-02-08</admissionDate>
+    <doctorFullName>Соколов Виктор Иванович</doctorFullName>
+    <diagnosis>Мигрень</diagnosis>
+  </record>
+  <record>
+    <fullName>Филиппов Дмитрий Викторович</fullName>
+    <address>г. Смоленск, ул. Мира, д. 12</address>
+    <birthDate>1985-06-06</birthDate>
+    <admissionDate>2025-03-18</admissionDate>
+    <doctorFullName>Павлова Анна Олеговна</doctorFullName>
+    <diagnosis>ОРВИ</diagnosis>
+  </record>
+  <record>
+    <fullName>Гаврилова Наталья Петровна</fullName>
+    <address>г. Тула, ул. Ленина, д. 7</address>
+    <birthDate>1992-04-04</birthDate>
+    <admissionDate>2025-04-03</admissionDate>
+    <doctorFullName>Кузнецов Игорь Сергеевич</doctorFullName>
+    <diagnosis>Тонзиллит</diagnosis>
+  </record>
+  <record>
+    <fullName>Мельников Андрей Александрович</fullName>
+    <address>г. Псков, ул. Победы, д. 15</address>
+    <birthDate>1989-08-08</birthDate>
+    <admissionDate>2025-01-12</admissionDate>
+    <doctorFullName>Федорова Мария Викторовна</doctorFullName>
+    <diagnosis>Пневмония</diagnosis>
+  </record>
+  <record>
+    <fullName>Кудрявцева Ольга Николаевна</fullName>
+    <address>г. Калуга, ул. Советская, д. 8</address>
+    <birthDate>1994-03-03</birthDate>
+    <admissionDate>2025-02-28</admissionDate>
+    <doctorFullName>Степанов Олег Павлович</doctorFullName>
+    <diagnosis>Гипертония</diagnosis>
+  </record>
+  <record>
+    <fullName>Борисов Виктор Сергеевич</fullName>
+    <address>г. Астрахань, ул. Центральная, д. 9</address>
+    <birthDate>1986-12-12</birthDate>
+    <admissionDate>2025-03-22</admissionDate>
+    <doctorFullName>Козлова Елена Михайловна</doctorFullName>
+    <diagnosis>Ангина</diagnosis>
+  </record>
+  <record>
+    <fullName>Соловьева Анна Игоревна</fullName>
+    <address>г. Тверь, ул. Южная, д. 11</address>
+    <birthDate>1991-07-07</birthDate>
+    <admissionDate>2025-04-18</admissionDate>
+    <doctorFullName>Иванов Артем Сергеевич</doctorFullName>
+    <diagnosis>Гастрит</diagnosis>
+  </record>
+  <record>
+    <fullName>Козлов Павел Викторович</fullName>
+    <address>г. Липецк, ул. Лермонтова, д. 6</address>
+    <birthDate>1988-02-02</birthDate>
+    <admissionDate>2025-01-18</admissionDate>
+    <doctorFullName>Михайлова Светлана Олеговна</doctorFullName>
+    <diagnosis>Бронхит</diagnosis>
+  </record>
+  <record>
+    <fullName>Ефимова Мария Сергеевна</fullName>
+    <address>г. Курск, ул. Комсомольская, д. 14</address>
+    <birthDate>1993-09-09</birthDate>
+    <admissionDate>2025-02-12</admissionDate>
+    <doctorFullName>Соколов Игорь Викторович</doctorFullName>
+    <diagnosis>Мигрень</diagnosis>
+  </record>
+  <record>
+    <fullName>Гордеев Антон Александрович</fullName>
+    <address>г. Брянск, ул. Мира, д. 10</address>
+    <birthDate>1987-05-05</birthDate>
+    <admissionDate>2025-03-08</admissionDate>
+    <doctorFullName>Павлова Елена Петровна</doctorFullName>
+    <diagnosis>ОРВИ</diagnosis>
+  </record>
+  <record>
+    <fullName>Зимина Екатерина Олеговна</fullName>
+    <address>г. Иваново, ул. Ленина, д. 12</address>
+    <birthDate>1990-11-11</birthDate>
+    <admissionDate>2025-04-05</admissionDate>
+    <doctorFullName>Кузнецов Виктор Сергеевич</doctorFullName>
+    <diagnosis>Тонзиллит</diagnosis>
+  </record>
+  <record>
+    <fullName>Фомин Сергей Викторович</fullName>
+    <address>г. Белгород, ул. Победы, д. 7</address>
+    <birthDate>1985-03-03</birthDate>
+    <admissionDate>2025-01-25</admissionDate>
+    <doctorFullName>Федорова Анна Михайловна</doctorFullName>
+    <diagnosis>Пневмония</diagnosis>
+  </record>
+  <record>
+    <fullName>Лебедева Ирина Петровна</fullName>
+    <address>г. Чебоксары, ул. Советская, д. 9</address>
+    <birthDate>1992-06-06</birthDate>
+    <admissionDate>2025-02-20</admissionDate>
+    <doctorFullName>Степанов Игорь Олегович</doctorFullName>
+    <diagnosis>Гипертония</diagnosis>
+  </record>
+  <record>
+    <fullName>Семенов Олег Александрович</fullName>
+    <address>г. Саранск, ул. Центральная, д. 13</address>
+    <birthDate>1989-01-01</birthDate>
+    <admissionDate>2025-03-15</admissionDate>
+    <doctorFullName>Козлова Мария Викторовна</doctorFullName>
+    <diagnosis>Ангина</diagnosis>
+  </record>
+  <record>
+    <fullName>Миронова Анна Сергеевна</fullName>
+    <address>г. Йошкар-Ола, ул. Южная, д. 8</address>
+    <birthDate>1994-04-04</birthDate>
+    <admissionDate>2025-04-10</admissionDate>
+    <doctorFullName>Иванов Олег Павлович</doctorFullName>
+    <diagnosis>Гастрит</diagnosis>
+  </record>
+  <record>
+    <fullName>Виноградов Виктор Игоревич</fullName>
+    <address>г. Петрозаводск, ул. Лермонтова, д. 11</address>
+    <birthDate>1986-08-08</birthDate>
+    <admissionDate>2025-01-15</admissionDate>
+    <doctorFullName>Михайлова Елена Сергеевна</doctorFullName>
+    <diagnosis>Бронхит</diagnosis>
+  </record>
+  <record>
+    <fullName>Калинина Ольга Викторовна</fullName>
+    <address>г. Великий Новгород, ул. Комсомольская, д. 6</address>
+    <birthDate>1991-12-12</birthDate>
+    <admissionDate>2025-02-05</admissionDate>
+    <doctorFullName>Соколов Андрей Михайлович</doctorFullName>
+    <diagnosis>Мигрень</diagnosis>
+  </record>
+  <record>
+    <fullName>Тихонов Павел Сергеевич</fullName>
+    <address>г. Сыктывкар, ул. Мира, д. 14</address>
+    <birthDate>1988-07-07</birthDate>
+    <admissionDate>2025-03-01</admissionDate>
+    <doctorFullName>Павлова Мария Олеговна</doctorFullName>
+    <diagnosis>ОРВИ</diagnosis>
+  </record>
+  <record>
+    <fullName>Суханова Екатерина Петровна</fullName>
+    <address>г. Хабаровск, ул. Ленина, д. 10</address>
+    <birthDate>1993-02-02</birthDate>
+    <admissionDate>2025-04-15</admissionDate>
+    <doctorFullName>Кузнецов Сергей Викторович</doctorFullName>
+    <diagnosis>Тонзиллит</diagnosis>
+  </record>
+</records>

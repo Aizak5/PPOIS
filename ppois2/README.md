@@ -31,7 +31,7 @@
  ```
  <records>
   <record>
-    <fullName>Иван Иванов</fullName>
+    <fullName>Иванов Иван Иванович</fullName>
     <address>ул. Ленина, 123</address>
     <birthDate>1990-01-01</birthDate>
     <admissionDate>2023-10-01</admissionDate>

@@ -32,10 +32,10 @@
  <records>
   <record>
     <fullName>Иванов Иван Иванович</fullName>
-    <address>ул. Ленина, 123</address>
-    <birthDate>1990-01-01</birthDate>
-    <admissionDate>2023-10-01</admissionDate>
-    <doctorFullName>Доктор Смирнов</doctorFullName>
+    <address>г. Москва, ул. Ленина, д. 10</address>
+    <birthDate>1990-05-15</birthDate>
+    <admissionDate>2025-01-20</admissionDate>
+    <doctorFullName>Петров Петр Петрович</doctorFullName>
     <diagnosis>Грипп</diagnosis>
   </record>
   ...
